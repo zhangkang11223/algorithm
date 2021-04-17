@@ -11,6 +11,10 @@ import java.util.Arrays;
 public class SelectSortOptimization {
     public static void main(String[] args) {
         int [] array = {5,3,6,8,1,7,9,4,2,23,45,12,44,0};
+        sort(array);
+    }
+
+    static void sort(int[] array) {
         for (int j = 0; j < array.length -j; j++) {
             int minPosition = j;
             int maxPosition = j;
@@ -22,7 +26,7 @@ public class SelectSortOptimization {
                     maxPosition = i;
                 }
             }
-            System.out.println("min : " + array[minPosition]  + "  max : " + array[maxPosition] );
+            //System.out.println("min : " + array[minPosition]  + "  max : " + array[maxPosition] );
             int tempMin =  array[minPosition];
             int tempMax =  array[maxPosition];
             // 最大和最后一位互换, lastIndex最后一位下标
@@ -40,7 +44,7 @@ public class SelectSortOptimization {
                 array[minPosition] = array[j];
                 array[j] = tempMin;
             }
-            System.out.println(Arrays.toString(array));
+            //System.out.println(Arrays.toString(array));
         }
     }
 }
