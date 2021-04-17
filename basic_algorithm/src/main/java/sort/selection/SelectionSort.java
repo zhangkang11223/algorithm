@@ -1,8 +1,9 @@
-package sort;
+package sort.selection;
 
 import java.util.Arrays;
 
 /**
+ * 每次找得到数组中的最小值，与首位互换
  * @author zhangkang
  * @version 1.0
  * @date 2021/4/17
