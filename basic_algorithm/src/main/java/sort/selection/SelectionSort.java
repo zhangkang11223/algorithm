@@ -20,7 +20,7 @@ public class SelectionSort {
         sort(array);
     }
 
-    static void sort(int[] array) {
+    public static void sort(int[] array) {
         // 最后一次不用循环
         for (int j = 0; j <array.length -1 ; j++) {
             // 找到最小值

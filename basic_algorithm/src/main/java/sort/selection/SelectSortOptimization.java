@@ -14,7 +14,7 @@ public class SelectSortOptimization {
         sort(array);
     }
 
-    static void sort(int[] array) {
+    public static void sort(int[] array) {
         for (int j = 0; j < array.length -j; j++) {
             int minPosition = j;
             int maxPosition = j;
