@@ -1,6 +1,8 @@
 package sort.checker;
 
 import sort.bubble.BubbleSort;
+import sort.insert.InsertSort;
+import sort.insert.InsertSortOptimization;
 import sort.selection.SelectionSort;
 
 import java.util.Arrays;
@@ -28,7 +30,7 @@ public class DataChecker {
         int[] ints2 = new int[ints.length];
         System.arraycopy(ints, 0,ints2,0,ints.length);
         Arrays.sort(ints);
-        BubbleSort.sort(ints2);
+        InsertSortOptimization.sort(ints2);
         boolean same = true;
         for (int i = 0; i < ints.length; i++) {
             if (ints[i] != ints2[i]) {
