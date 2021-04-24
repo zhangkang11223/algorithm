@@ -4,6 +4,7 @@ import sort.bubble.BubbleSort;
 import sort.insert.InsertSort;
 import sort.insert.InsertSortOptimization;
 import sort.selection.SelectionSort;
+import sort.shell.ShellSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -30,7 +31,7 @@ public class DataChecker {
         int[] ints2 = new int[ints.length];
         System.arraycopy(ints, 0,ints2,0,ints.length);
         Arrays.sort(ints);
-        InsertSortOptimization.sort(ints2);
+        ShellSort.sort(ints2);
         boolean same = true;
         for (int i = 0; i < ints.length; i++) {
             if (ints[i] != ints2[i]) {
