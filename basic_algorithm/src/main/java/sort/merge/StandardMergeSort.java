@@ -20,12 +20,17 @@ public class StandardMergeSort {
         System.out.println(Arrays.toString(array2));
     }
 
+    /**
+     * 递归分组
+     * @param array 待排序的数组
+     * @param leftBound 数组左边界下标
+     * @param rightBound 数组右边界下标
+     */
     public static void sort(int[] array, int leftBound, int rightBound) {
-
         if (leftBound == rightBound) { // base case
             return;
         }
-        // 分组
+        // 获取中间值(左数组末尾下标)
         int mid = leftBound + (rightBound - leftBound)/2;
         // 左排序
         sort(array, leftBound, mid);
@@ -40,7 +45,7 @@ public class StandardMergeSort {
      * @param array 待排序的数组
      * @param leftIndex 待排序数组的左下标
      * @param rightIndex 待排序数组的右下标
-     * @param rightBound 右边界
+     * @param rightBound 右边界下标
      */
     private static void merger(int[] array, int leftIndex, int rightIndex, int rightBound) {
         // firstIndex 这个值用来temp数组拷贝使用
@@ -62,10 +67,10 @@ public class StandardMergeSort {
         }
 
         while(leftIndex <= endLeft) {
-            temp[tempIndex++] = array[leftIndex++];
+            temp[tempIndex++] = array[leftIndex++]; //补足剩余的左列表
         }
         while(rightIndex <= rightBound) {
-            temp[tempIndex++] = array[rightIndex++];
+            temp[tempIndex++] = array[rightIndex++]; // 补足剩余的右列表
         }
         for (int i = 0 ;i< temp.length; i++) {
             array[firstIndex + i] = temp[i];
