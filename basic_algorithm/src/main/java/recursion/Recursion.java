@@ -1,9 +1,7 @@
 package recursion;
 
 /**
- * @author zhangkang
- * @version 1.0
- * @date 2021/4/29
+ * 递归累加
  */
 public class Recursion {
 

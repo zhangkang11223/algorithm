@@ -1,12 +1,7 @@
 package sort.selection;
 
-import java.util.Arrays;
-
 /**
  * 选择排序优化： 每次遍历输出最小和最大值，遍历次数为：n/2
- * @author zhangkang
- * @version 1.0
- * @date 2021/4/17
  */
 public class SelectSortOptimization {
     public static void main(String[] args) {
