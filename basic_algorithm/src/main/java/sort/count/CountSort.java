@@ -46,7 +46,6 @@ public class CountSort {
 
     /**
      * 优化计数排序：稳定
-     *
      */
     public static void sortOptimization(int[] array) {
         // 已知待排序数组的结果集的范围0~9
