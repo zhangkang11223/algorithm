@@ -62,7 +62,7 @@ public class CountSort {
         }
         System.out.println(Arrays.toString(k));
         for (int q = array.length -1; q >= 0 ; q--) {
-            //newArray[k[array[q]]-- - 1] = array[q];
+            //newArray[k[array[q]]-- - 1] = array[q];     // k[array[q]]-- - 1  可以优化为： --k[array[q]]
             newArray[--k[array[q]]] = array[q];
         }
         System.out.println(Arrays.toString(newArray));
